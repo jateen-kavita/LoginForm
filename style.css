@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Iceland&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Iceland&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img-container {
+  background-image: url(image\ 1.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.glassmorphism {
+  height: 31.25rem;
+  width: 31.25rem;
+  background: rgba(48, 145, 215, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border-radius: 0.625rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1.563rem;
+  position: absolute;
+  left: 56%;
+  top: 20%;
+}
+
+.header {
+  margin-top: 3.125rem;
+  margin-left: 1.563rem;
+}
+hr {
+  height: 0.125rem;
+  width: 7.183rem;
+  margin: 0.75rem 0px;
+}
+.header p:first-child {
+  font-family: sans-serif;
+  color: white;
+  font-weight: 400;
+  font-family: "Iceland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.25rem;
+}
+.header p:last-child {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 0.875rem;
+  font-style: normal;
+  color: #c0c0c0;
+  letter-spacing: 0.081rem;
+}
+
+.login-info {
+  color: #fff;
+  margin-top: 1.563rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  color: #c0c0c0;
+  margin-left: 1.563rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.username {
+  margin: 0.938rem 0px;
+  letter-spacing: 0.8px;
+}
+
+.input-bars {
+  background: rgba(48, 145, 215, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  margin-top: 0.625rem;
+  padding: 0px 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 0.875rem;
+  font-style: normal;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  width: 26.563rem;
+  height: 2.813rem;
+  letter-spacing: 1.25px;
+  outline: none;
+}
+.input-bars::placeholder {
+  color: #fff;
+  opacity: 55%;
+}
+.password {
+  letter-spacing: 0.8px;
+}
+
+.reset-password {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.75rem 50px;
+}
+.reset-password p a {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 0.875rem;
+  font-style: normal;
+  color: #c0c0c0;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+}
+.reset-password p a:hover {
+  text-decoration: underline;
+  color: #fff;
+  font-size: 14.2px;
+  transition: 0.2s ease-in;
+}
+.login-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.938rem;
+}
+.btn {
+  padding: 0.75rem 10.313rem;
+  border-radius: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 0.875rem;
+  font-style: normal;
+  background-color: #a5d9d0;
+  color: #000;
+  letter-spacing: 1.3px;
+  cursor: pointer;
+  border: none;
+}
+.btn:hover {
+  background-color: #70b8e8;
+  font-size: 0.906rem;
+  padding: 0.75rem 10.438rem;
+  transition: 0.3s ease-in-out;
+}
+.registeration-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 21px;
+}
+.registeration-link p,
+a {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 0.906rem;
+  font-style: normal;
+  color: #c0c0c0;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+}
+.registeration-link a {
+  color: #d68283;
+}
+.registeration-link a:hover {
+  color: #fff;
+  font-size: 0.906rem;
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
+#cube3d {
+  position: absolute;
+  border: none;
+  width: 125px;
+  height: 125px;
+  left: 85%;
+  top: 16%;
+  animation: orange-box infinite 3s ease-in-out alternate;
+}
+@keyframes orange-box {
+  0% {
+    top: 16%;
+    left: 85%;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 20%;
+    transform: rotate(45deg);
+    /* left: 86%; */
+  }
+}
+
+#sphere3d {
+  position: absolute;
+  border: none;
+  width: 10.938rem;
+  height: 10.938rem;
+  left: 54%;
+  top: 72%;
+  animation: sphere 3s infinite ease-in-out alternate;
+  transform: scale(1);
+}
+@keyframes sphere {
+  0% {
+    left: 54%;
+    top: 72%;
+    transform: rotate(0deg);
+    transform: scale(1);
+  }
+  100% {
+    top: 76%;
+    transform: rotate(60deg);
+    transform: scale(0.8);
+  }
+}
+#donut3d {
+  position: absolute;
+  border: none;
+  width: 11.25rem;
+  height: 11.25rem;
+  left: 8%;
+  top: 4%;
+  transform: rotate(-85deg);
+  animation: donut 3s infinite ease-in-out alternate;
+}
+@keyframes donut {
+  0% {
+    transform: scale(1) rotate(-85deg);
+  }
+  100% {
+    transform: scale(0.5) rotate(-75deg);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .img-container {
+    height: 100vh;
+    width: 100vw;
+    background: url(pexels-anniroenkae-2832382.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .glassmorphism {
+    height: 31.5rem;
+    width: 22rem;
+    border-radius: 1.563rem;
+    left: 10%;
+  }
+  .login-info {
+    margin-left: 0.7rem;
+    font-size: 0.9rem;
+  }
+  .input-bars {
+    width: 19rem;
+    border-radius: 0.8rem;
+  }
+  .btn {
+    padding: 0.75rem 7.313rem;
+  }
+  .btn:hover {
+    font-size: 0.906rem;
+    padding: 0.75rem 6.7rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .reset-password {
+    margin: 0.75rem 20px;
+  }
+  .reset-password p a {
+    font-weight: 400;
+    font-size: 0.785rem;
+  }
+  .registeration-link p,
+  a {
+    font-size: 0.706rem;
+    letter-spacing: 1.2px;
+  }
+  #cube3d {
+    width: 50px;
+    height: 50px;
+    left: 80%;
+    top: 70%;
+  }
+  #sphere3d {
+    width: 50px;
+    height: 50px;
+    top: 15%;
+    left: 60%;
+  }
+  #donut3d {
+    width: 50px;
+    height: 50px;
+    top: 10%;
+    left: 15%;
+  }
+}
